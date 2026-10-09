@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Pengaturan dasar halaman dan link ke CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bagian atas halaman -->
+    <header>
+        <h1>Formulir Pendaftaran</h1>
+    </header>
+    
+    <!-- Konten utama halaman -->
+    <main>
+        <!-- Bungkus form pakai section biar rapi -->
+        <section class="card">
+            <h2>Daftar Baru</h2>
+            
+            <!-- Form kirim data ke detail.html lewat URL (GET) -->
+            <form action="detail.html" method="GET">
+                <div class="form-group">
+                    <!-- Label dan input untuk nama -->
+                    <label for="nama">Nama Lengkap :</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <!-- Label dan input untuk email -->
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Tombol kirim data -->
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
